@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bxn38awueywll"]
+
+[ext_resource type="Texture2D" uid="uid://c4l1tic5wnl2m" path="res://assets/props/beach_tileset.png" id="1_7wgsl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y3v6g"]
+atlas = ExtResource("1_7wgsl")
+region = Rect2(112, 208, 48, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7wgsl"]
+size = Vector2(18, 35)
+
+[node name="left_beach_tree" type="Sprite2D"]
+texture = SubResource("AtlasTexture_y3v6g")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-1, 18.5)
+shape = SubResource("RectangleShape2D_7wgsl")

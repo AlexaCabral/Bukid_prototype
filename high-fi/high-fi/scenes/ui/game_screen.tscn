@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://g4fs3nnfdd4f"]
+
+[ext_resource type="Theme" uid="uid://6w25ydpjgtnd" path="res://scenes/ui/game_ui_res.tres" id="1_8hmcv"]
+[ext_resource type="PackedScene" uid="uid://buoqlgwxy0p4d" path="res://scenes/ui/day_night_ui.tscn" id="2_e2vrk"]
+
+[node name="GameScreen" type="CanvasLayer"]
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_8hmcv")
+
+[node name="DayNightUi" parent="MarginContainer" instance=ExtResource("2_e2vrk")]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0

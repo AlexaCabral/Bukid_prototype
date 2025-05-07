@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dkikhcvqd365g"]
+
+[ext_resource type="Texture2D" uid="uid://y00psr8306lw" path="res://assets/shops/commerce_fishmarket_stall.png" id="1_o0xes"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5atl4"]
+atlas = ExtResource("1_o0xes")
+region = Rect2(24, 24, 80, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y23i0"]
+size = Vector2(45, 75)
+
+[node name="MangingisdaHut" type="Sprite2D"]
+texture = SubResource("AtlasTexture_5atl4")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1.50001, 8.5)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_y23i0")
