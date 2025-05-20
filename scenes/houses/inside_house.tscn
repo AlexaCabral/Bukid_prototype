@@ -1,9 +1,11 @@
-[gd_scene load_steps=6 format=4 uid="uid://p8ids1ivvab1"]
+[gd_scene load_steps=8 format=4 uid="uid://p8ids1ivvab1"]
 
 [ext_resource type="Script" uid="uid://crxhhbjapno1" path="res://scripts/main_menu/inside_house.gd" id="1_0mho4"]
 [ext_resource type="TileSet" uid="uid://d0dyvqx1lqch4" path="res://tilesets/house_tile_set.tres" id="1_fcswi"]
 [ext_resource type="PackedScene" uid="uid://yyvb08uiognj" path="res://scenes/characters/player/player.tscn" id="2_mb6ms"]
 [ext_resource type="PackedScene" uid="uid://dudljfk2gjm3" path="res://scenes/houses/scene_trigger.tscn" id="3_o8ggp"]
+[ext_resource type="PackedScene" uid="uid://cg4lsbst6j5y1" path="res://scenes/components/day_night_component.tscn" id="5_vjf50"]
+[ext_resource type="PackedScene" uid="uid://g4fs3nnfdd4f" path="res://scenes/ui/game_screen.tscn" id="6_gxv4b"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0mho4"]
 size = Vector2(48, 16)
@@ -43,3 +45,7 @@ connected_scene = "main/world"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SceneTrigger"]
 position = Vector2(1, -1)
 shape = SubResource("RectangleShape2D_0mho4")
+
+[node name="DayNightComponent" parent="." instance=ExtResource("5_vjf50")]
+
+[node name="GameScreen" parent="." instance=ExtResource("6_gxv4b")]

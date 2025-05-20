@@ -16,8 +16,10 @@ script = ExtResource("2_gdmay")
 
 [node name="DayPanel" type="PanelContainer" parent="."]
 layout_mode = 2
-offset_left = -80.0
+offset_left = -160.0
+offset_right = -80.0
 offset_bottom = 26.0
+scale = Vector2(2, 2)
 theme_type_variation = &"DayNightPanel"
 
 [node name="MarginContainer" type="MarginContainer" parent="DayPanel"]
@@ -36,9 +38,11 @@ horizontal_alignment = 1
 
 [node name="TimePanel" type="PanelContainer" parent="."]
 layout_mode = 2
-offset_left = -80.0
-offset_top = 28.0
-offset_bottom = 54.0
+offset_left = -160.0
+offset_top = 54.0
+offset_right = -80.0
+offset_bottom = 80.0
+scale = Vector2(2, 2)
 theme_type_variation = &"DayNightPanel"
 
 [node name="MarginContainer" type="MarginContainer" parent="TimePanel"]
@@ -57,9 +61,11 @@ horizontal_alignment = 1
 
 [node name="Control" type="Control" parent="."]
 anchors_preset = 0
-offset_left = -80.0
-offset_top = 56.0
-offset_bottom = 74.0
+offset_left = -160.0
+offset_top = 108.0
+offset_right = -80.0
+offset_bottom = 126.0
+scale = Vector2(2, 2)
 
 [node name="CheetahSpeedButton" type="Button" parent="Control"]
 layout_mode = 0

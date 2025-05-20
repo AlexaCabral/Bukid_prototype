@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=4 uid="uid://ethoknu3cbbb"]
+[gd_scene load_steps=20 format=4 uid="uid://ethoknu3cbbb"]
 
 [ext_resource type="TileSet" uid="uid://cm8p6b8iopmnm" path="res://tilesets/forest_tile_set.tres" id="1_a4fho"]
 [ext_resource type="PackedScene" uid="uid://cm6qttpchreq5" path="res://scenes/characters/enemy/nuno.tscn" id="3_a070p"]
@@ -7,6 +7,8 @@
 [ext_resource type="PackedScene" uid="uid://dkh3owplo8lcj" path="res://scenes/characters/player/fighter.tscn" id="4_k46ap"]
 [ext_resource type="PackedScene" uid="uid://phejpgeuj40h" path="res://scenes/characters/enemy/tiyanak.tscn" id="5_a070p"]
 [ext_resource type="PackedScene" uid="uid://bm71fc05c1qhu" path="res://scenes/characters/enemy/mananaggal.tscn" id="6_5282s"]
+[ext_resource type="PackedScene" uid="uid://cg4lsbst6j5y1" path="res://scenes/components/day_night_component.tscn" id="8_b2wj2"]
+[ext_resource type="PackedScene" uid="uid://g4fs3nnfdd4f" path="res://scenes/ui/game_screen.tscn" id="9_cg41w"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5282s"]
 size = Vector2(96, 16)
@@ -182,3 +184,7 @@ position = Vector2(783, 402)
 
 [node name="Fighter" parent="." instance=ExtResource("4_k46ap")]
 position = Vector2(544, 634)
+
+[node name="DayNightComponent" parent="." instance=ExtResource("8_b2wj2")]
+
+[node name="GameScreen" parent="." instance=ExtResource("9_cg41w")]

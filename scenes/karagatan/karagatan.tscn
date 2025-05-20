@@ -1,8 +1,10 @@
-[gd_scene load_steps=8 format=4 uid="uid://6uidq0de0u08"]
+[gd_scene load_steps=10 format=4 uid="uid://6uidq0de0u08"]
 
 [ext_resource type="TileSet" uid="uid://dl8qfj27nkxbf" path="res://tilesets/game_tile_set.tres" id="1_m6bd8"]
 [ext_resource type="PackedScene" uid="uid://dudljfk2gjm3" path="res://scenes/houses/scene_trigger.tscn" id="2_y74ua"]
 [ext_resource type="PackedScene" uid="uid://yyvb08uiognj" path="res://scenes/characters/player/player.tscn" id="2_yh3jc"]
+[ext_resource type="PackedScene" uid="uid://g4fs3nnfdd4f" path="res://scenes/ui/game_screen.tscn" id="4_go71g"]
+[ext_resource type="PackedScene" uid="uid://cg4lsbst6j5y1" path="res://scenes/components/day_night_component.tscn" id="5_k2vy8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2yigs"]
 size = Vector2(871, 15)
@@ -16,7 +18,7 @@ size = Vector2(20, 210)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_85f8h"]
 size = Vector2(116.5, 20)
 
-[node name="karagatan_stall" type="Node2D"]
+[node name="karagatan" type="Node2D"]
 y_sort_enabled = true
 
 [node name="tilemap" type="Node2D" parent="."]
@@ -95,3 +97,7 @@ shape = SubResource("RectangleShape2D_85f8h")
 
 [node name="Player" parent="." instance=ExtResource("2_yh3jc")]
 position = Vector2(198, 36)
+
+[node name="GameScreen" parent="." instance=ExtResource("4_go71g")]
+
+[node name="DayNightComponent" parent="." instance=ExtResource("5_k2vy8")]

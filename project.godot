@@ -10,14 +10,20 @@ config_version=5
 
 [application]
 
-config/name="High Fi"
+config/name="Bukid"
 run/main_scene="uid://b2n2p36stp78x"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
+DayNightManager="*res://scripts/globals/day_night_manager.gd"
 global="*res://scripts/global.gd"
+
+[display]
+
+window/stretch/aspect="keep_height"
+window/stretch/scale_mode="integer"
 
 [file_customization]
 

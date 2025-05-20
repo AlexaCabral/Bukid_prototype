@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://cg4lsbst6j5y1"]
+[gd_scene load_steps=3 format=3 uid="uid://cg4lsbst6j5y1"]
 
 [ext_resource type="Script" uid="uid://bt2ouxub7xhhs" path="res://scenes/components/day_night_component.gd" id="1_q8wse"]
+[ext_resource type="Texture2D" uid="uid://be6t2dp4xhwb7" path="res://scenes/components/day_night_component.tres" id="2_fikq5"]
 
 [node name="DayNightComponent" type="CanvasModulate"]
 script = ExtResource("1_q8wse")
+day_night_gradient_texture = ExtResource("2_fikq5")

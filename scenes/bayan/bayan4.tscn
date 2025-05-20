@@ -1,9 +1,11 @@
-[gd_scene load_steps=9 format=4 uid="uid://m2ton8oui1f7"]
+[gd_scene load_steps=11 format=4 uid="uid://m2ton8oui1f7"]
 
 [ext_resource type="TileSet" uid="uid://dij6bct7hv18e" path="res://tilesets/game_tile_set_1.tres" id="1_nyn6m"]
 [ext_resource type="TileSet" uid="uid://d0dyvqx1lqch4" path="res://tilesets/house_tile_set.tres" id="2_7f07d"]
 [ext_resource type="PackedScene" uid="uid://dudljfk2gjm3" path="res://scenes/houses/scene_trigger.tscn" id="3_tuwmi"]
 [ext_resource type="PackedScene" uid="uid://yyvb08uiognj" path="res://scenes/characters/player/player.tscn" id="4_f7qek"]
+[ext_resource type="PackedScene" uid="uid://cg4lsbst6j5y1" path="res://scenes/components/day_night_component.tscn" id="5_7f07d"]
+[ext_resource type="PackedScene" uid="uid://g4fs3nnfdd4f" path="res://scenes/ui/game_screen.tscn" id="6_tuwmi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vvby1"]
 size = Vector2(17, 75)
@@ -82,3 +84,7 @@ shape = SubResource("RectangleShape2D_ml1ma")
 
 [node name="Player" parent="." instance=ExtResource("4_f7qek")]
 position = Vector2(559, 12)
+
+[node name="DayNightComponent" parent="." instance=ExtResource("5_7f07d")]
+
+[node name="GameScreen" parent="." instance=ExtResource("6_tuwmi")]
